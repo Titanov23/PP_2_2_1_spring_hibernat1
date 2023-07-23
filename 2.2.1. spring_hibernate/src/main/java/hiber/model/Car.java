@@ -7,6 +7,7 @@ import javax.persistence.*;
 @Entity
 @Table(name = "cars")
 public class Car {
+    @JoinColumn
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
